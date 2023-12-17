@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatibile" content="ie-eadge" />
+    <title>Izmena korisnika</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./izmena-korisnika-style.css"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@1,600&family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@1,600&family=M+PLUS+1+Code:wght@500&family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="slike/logonaslova.png" />
+  </head>
+  <body>
+    <div id="pretraga">
+      <div id="prijava_registracija">
+        <button id="prijava" type="button" class="btn btn-light">
+          Prijava
+        </button>
+        <button id="registracija" type="button" class="btn btn-light">
+          Registracija
+        </button>
+      </div>
+    </div>
+    <header>
+      <div id="logo_naslov_linkovi">
+        <div id="logo_i_naslov">
+          <img id="logostranice" src="./slike/logo2.png" alt="Logo" />
+          <div id="h1_naslov">
+            <h1 id="naslov">
+              <a id="header-link" href="pocetna.html">
+                <span id="gold-text">IT</span>
+                <span id="kursevi-text">KURSEVI</span></a
+              >
+            </h1>
+          </div>
+        </div>
+        <div id="korpa">
+          <a href="korpa.html"
+            ><img src="./slike/shopping-cart.png" alt="Korpa za kupovinu"
+          /></a>
+        </div>
+      </div>
+      <nav>
+        <a href="pocetna.html">POČETNA</a>
+        <a href="#">O NAMA</a>
+        <a href="#">KURSEVI</a>
+        <a href="#">LOKACIJA</a>
+        <a href="#">KONTAKT</a>
+        <a href="korisnici-kursa.html">KORISNICI</a>
+      </nav>
+    </header>
+    <div class="naslov">
+      <h1>Izmena detalja o korisniku</h1>
+    </div>
+    <div class="telo">
+      <div class="container">
+        <div id="logo">
+          <img src="./slike/headicon.png" alt="Slika korisnika" />
+        </div>
+        <div id="podaci">
+          <form method="post">
+            <div class="klasa" id="korisnicko-ime">
+              <h2>Korisničko ime:</h2>
+              <input
+                id="korisnickoimeKorisnika"
+                type="text"
+                name="Korisnicko ime"
+                value=""
+              />
+              <p
+                class="errorIzmenaKorisnika"
+                id="errorKorisnickoImeIzmenaKorisnika"
+              ></p>
+            </div>
+
+            <div class="klasa" id="lozinka">
+              <h2>Lozinka:</h2>
+              <input
+                id="lozinkaKorisnika"
+                type="password"
+                name="Lozinka"
+                value=""
+              />
+              <p
+                class="errorIzmenaKorisnika"
+                id="errorLozinkaIzmenaKorisnika"
+              ></p>
+            </div>
+
+            <div class="klasa" id="email">
+              <h2>Email:</h2>
+              <input id="emailKorisnika" type="email" name="Email" value="" />
+              <p
+                class="errorIzmenaKorisnika"
+                id="errorEmailIzmenaKorisnika"
+              ></p>
+            </div>
+
+            <div class="klasa" id="ime">
+              <h2>Ime:</h2>
+              <input id="imeKorisnika" type="text" name="Ime" value="" />
+              <p class="errorIzmenaKorisnika" id="errorImeIzmenaKorisnika"></p>
+            </div>
+
+            <div class="klasa" id="prezime">
+              <h2>Prezime:</h2>
+              <input
+                id="prezimeKorisnika"
+                type="text"
+                name="Prezime"
+                value=""
+              />
+              <p
+                class="errorIzmenaKorisnika"
+                id="errorPrezimeIzmenaKorisnika"
+              ></p>
+            </div>
+
+            <div class="klasa" id="datum-rodjenja">
+              <h2>Datum rođenja:</h2>
+              <input
+                id="datumrodjenja"
+                type="date"
+                name="Datum rodjenja"
+                value=""
+              />
+              <p
+                class="errorIzmenaKorisnika"
+                id="errorDatumRodjenjaIzmenaKorisnika"
+              ></p>
+            </div>
+
+            <div class="klasa" id="adresa">
+              <h2>Adresa:</h2>
+              <input id="adresaKorisnika" type="text" name="Adresa" value="" />
+              <p
+                class="errorIzmenaKorisnika"
+                id="errorAdresaIzmenaKorisnika"
+              ></p>
+            </div>
+
+            <div class="klasa" id="broj-telefona">
+              <h2>Broj telefona:</h2>
+              <input
+                id="telefonKorisnika"
+                type="tel"
+                name="Broj telefona"
+                value=""
+              />
+              <p
+                class="errorIzmenaKorisnika"
+                id="errorTelefonIzmenaKorisnika"
+              ></p>
+            </div>
+            <input type="button" value="Potvrdi izmenu" id="potvrda" />
+          </form>
+        </div>
+      </div>
+      <div id="izmena">
+        <a id="nazadnakorisnika" href=""><h2>Nazad na korisnika</h2></a>
+      </div>
+    </div>
+
+    <footer>
+      <div id="socijalne_mreze">
+        <a class="linkovi" href="#"
+          ><img class="ikonice" src="./slike/facebook2.png" alt="Facebook"
+        /></a>
+        <a class="linkovi" href="#"
+          ><img class="ikonice" src="./slike/instagram2.png" alt="Instagram"
+        /></a>
+        <a class="linkovi" href="#"
+          ><img class="ikonice" src="./slike/linkedin2.png" alt="Linkedin"
+        /></a>
+        <a class="linkovi" href="#"
+          ><img class="ikonice" src="./slike/gmail2.png" alt="Gmail"
+        /></a>
+      </div>
+      <div class="tekst-header">
+        Copyright © 2021 IT Kursevi. Sva prava zadržana.
+      </div>
+    </footer>
+
+    <!--sekcija za prijavu-->
+    <div class="sekcija-prijava">
+      <div class="prijava">
+        <img id="izadji" src="./slike/cancel.png" alt="Izadji" />
+        <img src="./slike/headicon.png" alt="Slika korisnika" />
+        <form action="/" method="post">
+          <p class="errorGlavni error"></p>
+          <input
+            id="korisnickoimePrijava"
+            type="text"
+            name="Korisnicko ime"
+            placeholder="Korisničko ime"
+            class="prijavainputi"
+          />
+          <input
+            id="lozinkaPrijava"
+            type="password"
+            name="Lozinka"
+            placeholder="Lozinka"
+            class="prijavainputi"
+          />
+          <input type="submit" id="dugme-prijava" value="Prijavi se" />
+        </form>
+      </div>
+    </div>
+
+    <!--sekcija za registraciju-->
+    <div class="sekcija-registracija">
+      <div class="registracija">
+        <img id="izadji2" src="./slike/cancel.png" alt="Izadji" />
+        <img src="./slike/headicon.png" alt="Slika korisnika" />
+        <form action="" method="post">
+          <input
+            class="inputi"
+            id="korisnickoimeRegistracija"
+            type="text"
+            name="Korisnicko ime"
+            placeholder="Korisničko ime"
+          />
+          <p class="errorKorisnickoIme2 errorRegistracija errorp"></p>
+          <input
+            class="inputi"
+            id="lozinkaRegistracija"
+            type="password"
+            name="Lozinka"
+            placeholder="Lozinka"
+          />
+          <p class="errorLozinka2 errorRegistracija errorp"></p>
+          <input
+            class="inputi"
+            id="emailRegistracija"
+            type="email"
+            name="Email"
+            placeholder="E-mail"
+          />
+          <p class="errorEmail errorRegistracija errorp"></p>
+          <input
+            class="inputi"
+            id="imeRegistracija"
+            type="text"
+            name="Ime"
+            placeholder="Ime"
+          />
+          <p class="errorIme errorRegistracija errorp"></p>
+          <input
+            class="inputi"
+            id="prezimeRegistracija"
+            type="text"
+            name="Prezime"
+            placeholder="Prezime"
+          />
+          <p class="errorPrezime errorRegistracija errorp"></p>
+          <input
+            class="inputi"
+            id="datumRegistracija"
+            type="date"
+            name="Datum rodjenja"
+            placeholder="Datum rođenja"
+          />
+          <p class="errorDatum errorRegistracija errorp"></p>
+          <input
+            class="inputi"
+            id="adresaRegistracija"
+            type="text"
+            name="Adresa"
+            placeholder="Adresa"
+          />
+          <p class="errorAdresa errorRegistracija errorp"></p>
+          <input
+            class="inputi"
+            id="telefonRegistracija"
+            type="text"
+            name="Broj telefona"
+            placeholder="Broj telefona"
+          />
+          <p class="errorTelefon errorRegistracija errorp"></p>
+          <input type="button" id="dugme-registracija" value="Registruj se" />
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./javascript1.js"></script>
+    <script src="./izmena-korisnika.js"></script>
+  </body>
+</html>

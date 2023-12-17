@@ -1,0 +1,533 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cuprum", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #1a88b8;
+}
+
+#pretraga {
+  display: flex;
+  flex-direction: row;
+  background-color: azure;
+  text-align: center;
+  padding: 10px;
+}
+
+#search-dugme {
+  flex-grow: 1;
+  text-align: left;
+}
+
+#btn-search {
+  width: 80px;
+  background-color: black;
+  color: white;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#prijava_registracija {
+  flex-grow: 1;
+  text-align: right;
+}
+
+#prijava {
+  margin-right: 5px;
+}
+
+#prijava,
+#registracija {
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+#prijava:hover {
+  background-color: #1eba67;
+  color: white;
+}
+
+#registracija:hover {
+  background-color: #ff3d3d;
+  color: white;
+}
+
+header {
+  width: 100%;
+  position: static;
+}
+
+#logo_naslov_linkovi {
+  display: flex;
+  background-color: #1a88b8;
+  color: white;
+  padding: 10px;
+}
+
+#logo_i_naslov {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#header-link {
+  text-decoration: none;
+  color: white;
+}
+
+#logostranice {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border-radius: 30%;
+  margin-right: 8px;
+}
+
+#naslov {
+  background-color: #005275;
+  font-size: 70px;
+  text-align: center;
+  border-radius: 2px;
+  margin-bottom: 0px;
+  padding: 5px;
+  border: 4px solid black;
+}
+
+#gold-text {
+  color: gold;
+  font-weight: bold;
+}
+
+#kursevi-text:hover {
+  color: #1a88b8;
+}
+
+#korpa {
+  flex-grow: 1;
+  width: fit-content;
+  text-align: right;
+}
+
+#korpa img {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  background-color: #005275;
+  font-family: "Cuprum", sans-serif;
+}
+
+nav a {
+  flex-grow: 1;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  font-size: 17px;
+  transition: 300ms;
+}
+
+nav a:hover,
+.aktivna {
+  background-color: gold;
+  color: #005275;
+}
+
+.telo {
+  width: 100%;
+  height: 100vh;
+  margin: 0px auto;
+  background-color: #1a88b8;
+  display: flex;
+  flex-direction: column;
+}
+
+#box {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+#naslov-kursa {
+  padding-top: 40px;
+  margin: 0px 30px 20px;
+}
+
+#naslov-kursa h1 {
+  border: 3px solid black;
+  background-color: #000000a2;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+.tabela {
+  padding: 0% 20%;
+  margin-bottom: 30px;
+}
+
+table {
+  background-color: gold;
+  width: 100%;
+  align-self: center;
+  border: 5px solid black;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+table tr {
+  border-bottom: 3px solid black;
+}
+
+table td {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #ff3d3d;
+  color: white;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.tabela p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#kupovina-kursa {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #3dd800c5;
+  width: fit-content;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#kupovina-kursa a {
+  color: red;
+  text-decoration: none;
+  text-align: center;
+}
+
+#kupovina-kursa a p {
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  margin: auto;
+  padding: 5px;
+}
+
+#kupovina-kursa:hover {
+  background-color: black;
+}
+
+#kupovina-kursa a p:hover {
+  color: #3dd800c5;
+}
+
+footer {
+  display: inline-block;
+  background-color: #005275;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 5px 0px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+#socijalne_mreze {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.ikonice {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+}
+
+.sekcija-prijava,
+.sekcija-registracija {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.registracija {
+  width: 500px;
+  height: 650px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.registracija img {
+  width: 150px;
+  height: 150px;
+}
+
+.registracija #izadji2 {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 10;
+  right: 10px;
+  cursor: pointer;
+}
+
+.prijava {
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.prijava img {
+  width: 150px;
+  height: 150px;
+}
+
+.prijava #izadji {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 10;
+  right: 10px;
+  cursor: pointer;
+}
+
+.prijava form input {
+  padding: 1px;
+  width: 50%;
+  display: block;
+  margin: 15px auto;
+}
+
+.errorGlavni {
+  color: red;
+  font-size: 20px;
+}
+
+.registracija form input {
+  padding: 1px;
+  width: 50%;
+  display: block;
+  margin: 0px auto;
+}
+
+.errorp {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 2px;
+  height: 22px;
+}
+
+#dugme-prijava {
+  width: 120px;
+  background-color: gold;
+  color: black;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#dugme-registracija {
+  width: 120px;
+  background-color: gold;
+  color: black;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.sekcija-dodajuKorpu {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.korpaDodaj {
+  width: 320px;
+  height: 230px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.korpaDodaj img {
+  width: 110px;
+  height: 110px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.korpaDodaj p {
+  font-size: 22px;
+}
+
+.korpaDodaj p span {
+  color: #1eba67;
+  font-weight: bold;
+}
+@media only screen and (max-width: 960px) {
+  #logo_i_naslov {
+    flex-grow: 1;
+    display: flex;
+    margin-right: 5px;
+  }
+
+  #naslov {
+    font-size: 70px;
+  }
+
+  #logostranice {
+    display: none;
+  }
+
+  .ikonice {
+    margin-bottom: 2px;
+  }
+
+  #korpa {
+    padding: 5px;
+  }
+
+  #korpa img {
+    width: 40px;
+    height: 40px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    font-size: 15px;
+  }
+
+  .telo {
+    width: 100%;
+    margin: 0px auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  table th {
+    display: none;
+  }
+
+  table td {
+    display: block;
+    text-align: center;
+  }
+  td:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 3px solid black;
+  }
+
+  .prijava,
+  .registracija {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  #search-dugme {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #search-polje {
+    width: fit-content;
+    margin-bottom: 5px;
+  }
+  #btn-search {
+    width: fit-content;
+  }
+
+  #prijava_registracija {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #prijava {
+    margin-bottom: 5px;
+    margin-right: 0px;
+  }
+
+  #header-link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #naslov {
+    font-size: 55px;
+  }
+
+  #korpa {
+    padding: 5px;
+  }
+
+  #korpa img {
+    width: 35px;
+    height: 35px;
+  }
+
+  table td:first-child {
+    font-size: 21px;
+  }
+  table td {
+    font-size: 18px;
+  }
+
+  .ikonice {
+    width: 20px;
+    height: 20px;
+  }
+
+  .prijava,
+  .registracija {
+    width: 250px;
+  }
+}
