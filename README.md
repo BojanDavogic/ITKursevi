@@ -101,7 +101,7 @@ NAPOMENA 2: Studenti ne treba da brinu o pravima pristupa stranicama. Svi korisn
  
 U sklopu početne stranice dodati sekciju za pretragu. Sekcija za pretragu, treba da omogući pretragu kurseva po nazivu, autoru ili kategoriji istovremeno. 
  
-	3.2.  	Zadatak 2  
+3.2.  	Zadatak 2  
  
  U sklopu prikaza rezultata pretrage, implemenitati funkcionalnost označavanja ključnih reči iz pretrage u sklopu rezultata (svim ključnim rečima koje su pronađene u tekstovima obojati pozadinu kako bi one bile lakše uočljive). 
 
